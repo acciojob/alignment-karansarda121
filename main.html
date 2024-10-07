@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
     <style>
-		#table-1, #table-2, #table-3 {
+        /* General table styling */
+        #table-1, #table-2, #table-3 {
             width: 100%;
-            border-collapse: collapse;
+            border-collapse: separate;
+            border-spacing: 1px; /* Spacing between cells */
             border: 1px solid black;
         }
-       .green {
+
+        /* Apply padding and border to cells */
+        #table-1 td, #table-2 td, #table-3 td {
+            padding: 1px;
+            border: 1px solid black;
+        }
+
+        /* Background colors */
+        .green {
             background-color: green;
             color: white; /* Makes text more readable on green background */
         }
@@ -20,6 +30,20 @@
             background-color: blue;
             color: white; /* Makes text more readable on blue background */
         }
+
+        /* Aligning the heading to the center */
+        h1 {
+            text-align: center;
+        }
+
+        /* Alignment classes */
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
     </style>
 </head>
 
@@ -27,62 +51,62 @@
     <h1>HTML Assignment #3</h1>
 
     <!-- Table 1 -->
-    <table id="table-1" border='1'>
-        <tr >
+    <table id="table-1" class="middle">
+        <tr>
             <td id="t11">left</td>
-            <td id="t12">center</td>
+            <td id="t12" class="center">center</td>
             <td id="t13" class="right">right</td>
         </tr>
-        <tr class="center" >
+        <tr class="center">
             <td id="t11">left</td>
-            <td id="t12">center</td>
+            <td id="t12" class="center">center</td>
             <td id="t13" class="right">right</td>
         </tr>
-        <tr >
+        <tr>
             <td id="t11">left</td>
-            <td id="t12">center</td>
+            <td id="t12" class="center">center</td>
             <td id="t13" class="right">right</td>
         </tr>
     </table>
     <br><br>
 
     <!-- Table 2 -->
-    <table id="table-2" border='1'>
-    <tr>
-        <td id="t21" colspan="6"></td>
-    </tr>
-    <tr>
-        <td rowspan='4'></td> <!-- Fixed: Added closing td tag -->
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-		<td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td rowspan='2' colspan='3'></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td colspan='6'></td>
-    </tr>
-</table>
-
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6"></td>
+        </tr>
+        <tr>
+            <td rowspan='4'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td rowspan='2' colspan='3'></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan='6'></td>
+        </tr>
+    </table>
+    <br><br>
 
     <!-- Table 3 -->
-    <table id="table-3" border='1'>
+    <table id="table-3" class="middle">
         <tr class="green">
             <td colspan='3'></td>
         </tr>
