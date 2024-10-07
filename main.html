@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Assignment 3</title>
     <style>
+		#table-1, #table-2, #table-3 {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
        .green {
             background-color: green;
-           
+            color: white; /* Makes text more readable on green background */
         }
 
         .blue {
             background-color: blue;
-            
+            color: white; /* Makes text more readable on blue background */
         }
     </style>
 </head>
@@ -78,7 +83,7 @@
 
     <!-- Table 3 -->
     <table id="table-3" border='1'>
-        <tr >
+        <tr class="green">
             <td colspan='3'></td>
         </tr>
         <tr>
@@ -88,7 +93,7 @@
             </td>
             <td></td>
         </tr>
-        <tr >
+        <tr class="blue">
             <td colspan='3'></td>
         </tr>
     </table>
